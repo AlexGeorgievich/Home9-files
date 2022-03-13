@@ -104,7 +104,7 @@ public class OpenZipAndTest {
     }
 
     @Test
-    @DisplayName("Проверка формата и достоверность данных файла JSON ")
+    @DisplayName("Проверка формат и достоверность данных файла JSON ")
     void jsonJacksonTest() throws Exception {
         ObjectMapper mapper = new ObjectMapper();
         TestExample jsonObject = mapper.readValue(new File(pathResources + jsonFile), TestExample.class);
